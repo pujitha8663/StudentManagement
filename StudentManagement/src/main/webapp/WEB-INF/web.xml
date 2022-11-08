@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>StudentGetAll</servlet-name>
+  	<display-name>StudentGetAll</display-name>
+  	<description></description>
+  	<servlet-class>com.studentcontroller.StudentGetAll</servlet-class>
+  		<load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>Hii</servlet-name>
+  	<display-name>Hii</display-name>
+  	<description></description>
+  	<servlet-class>com.ciq.studentmanagement.Hii</servlet-class>
+  	<load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+  	<servlet-name>Welcome</servlet-name>
+  	<display-name>Welcome</display-name>
+  	<description></description>
+  	<servlet-class>com.ciq.studnetmanagement.Welcome</servlet-class>
+  		<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentGetAll</servlet-name>
+  	<url-pattern>/getStudents</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Hii</servlet-name>
+  	<url-pattern>/Hii</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Welcome</servlet-name>
+  	<url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+</web-app>
